@@ -8,7 +8,8 @@ public class LottoService {
     PurchaseResultView purchaseResultView = null;
     WinningResultView winningResultView = null;
 
-    public LottoService(Money investMoney, int countOfManualLotto, List<List<LottoNo>> numbersOfManualLotto, LottoSeller lottoSeller) {
+    public LottoService(Money investMoney, int countOfManualLotto, List<List<LottoNo>> numbersOfManualLotto,
+                        LottoSeller lottoSeller) {
         this.lottoUser = new LottoUser(investMoney, countOfManualLotto, numbersOfManualLotto);
         this.lottoSeller = lottoSeller;
     }

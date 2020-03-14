@@ -9,7 +9,11 @@ public final class PurchaseResultView {
     public void printPurchasedTicket(LottoUser lottoUser) {
         LottoTicket lottoTicket = lottoUser.getLottoTicket();
 
-        System.out.println("수동으로 " + lottoTicket.getCountOfManualLotto() + "장, 자동으로 " + lottoTicket.getCountOfAutoLotto() + "개를 구매했습니다.");
+        System.out.println(
+                "수동으로 " + lottoTicket.getCountOfManualLotto() +
+                "장, 자동으로 " + lottoTicket.getCountOfAutoLotto() +
+                "개를 구매했습니다."
+        );
 
         for (Lotto manualGame : lottoTicket.getManualLottos()) {
             System.out.println(manualGame.getNums());
@@ -21,6 +25,5 @@ public final class PurchaseResultView {
 
         System.out.println();
     }
-
 
 }
